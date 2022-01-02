@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F7467A2D2781A61800BD18FC /* StudyCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7467A2C2781A61800BD18FC /* StudyCardsApp.swift */; };
-		F7467A2F2781A61800BD18FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7467A2E2781A61800BD18FC /* ContentView.swift */; };
+		F7467A2F2781A61800BD18FC /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7467A2E2781A61800BD18FC /* SplashScreen.swift */; };
 		F7467A312781A61900BD18FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7467A302781A61900BD18FC /* Assets.xcassets */; };
 		F7467A342781A61900BD18FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7467A332781A61900BD18FC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		F7467A292781A61800BD18FC /* StudyCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7467A2C2781A61800BD18FC /* StudyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCardsApp.swift; sourceTree = "<group>"; };
-		F7467A2E2781A61800BD18FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7467A2E2781A61800BD18FC /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F7467A302781A61900BD18FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7467A332781A61900BD18FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				F7467A2C2781A61800BD18FC /* StudyCardsApp.swift */,
-				F7467A2E2781A61800BD18FC /* ContentView.swift */,
+				F7467A2E2781A61800BD18FC /* SplashScreen.swift */,
 				F7467A302781A61900BD18FC /* Assets.xcassets */,
 				F7467A322781A61900BD18FC /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7467A2F2781A61800BD18FC /* ContentView.swift in Sources */,
+				F7467A2F2781A61800BD18FC /* SplashScreen.swift in Sources */,
 				F7467A2D2781A61800BD18FC /* StudyCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
