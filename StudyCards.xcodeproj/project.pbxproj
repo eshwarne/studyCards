@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F701E0F42782117D00323774 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E0F32782117D00323774 /* HomePageView.swift */; };
 		F7467A2D2781A61800BD18FC /* StudyCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7467A2C2781A61800BD18FC /* StudyCardsApp.swift */; };
 		F7467A2F2781A61800BD18FC /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7467A2E2781A61800BD18FC /* SplashScreen.swift */; };
 		F7467A312781A61900BD18FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7467A302781A61900BD18FC /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F701E0F32782117D00323774 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		F7467A292781A61800BD18FC /* StudyCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7467A2C2781A61800BD18FC /* StudyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCardsApp.swift; sourceTree = "<group>"; };
 		F7467A2E2781A61800BD18FC /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F701E0F22782116900323774 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F701E0F32782117D00323774 /* HomePageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F7467A202781A61800BD18FC = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		F7467A2B2781A61800BD18FC /* StudyCards */ = {
 			isa = PBXGroup;
 			children = (
+				F701E0F22782116900323774 /* Views */,
 				F7467A2C2781A61800BD18FC /* StudyCardsApp.swift */,
 				F7467A2E2781A61800BD18FC /* SplashScreen.swift */,
 				F7467A302781A61900BD18FC /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				F7467A2F2781A61800BD18FC /* SplashScreen.swift in Sources */,
 				F7467A2D2781A61800BD18FC /* StudyCardsApp.swift in Sources */,
+				F701E0F42782117D00323774 /* HomePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
