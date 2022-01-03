@@ -14,6 +14,7 @@
 		F7467A342781A61900BD18FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7467A332781A61900BD18FC /* Preview Assets.xcassets */; };
 		F756FA222782BF2D0032FB7A /* CreateCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756FA212782BF2D0032FB7A /* CreateCardsView.swift */; };
 		F76E1338278311BC006D6CE2 /* NewCardModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E1337278311BC006D6CE2 /* NewCardModalView.swift */; };
+		F76E133A278330BE006D6CE2 /* CreateQuestionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E1339278330BE006D6CE2 /* CreateQuestionButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F7467A332781A61900BD18FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F756FA212782BF2D0032FB7A /* CreateCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardsView.swift; sourceTree = "<group>"; };
 		F76E1337278311BC006D6CE2 /* NewCardModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardModalView.swift; sourceTree = "<group>"; };
+		F76E1339278330BE006D6CE2 /* CreateQuestionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 				F701E0F32782117D00323774 /* HomePageView.swift */,
 				F756FA212782BF2D0032FB7A /* CreateCardsView.swift */,
 				F76E1337278311BC006D6CE2 /* NewCardModalView.swift */,
+				F76E1339278330BE006D6CE2 /* CreateQuestionButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				F7467A2F2781A61800BD18FC /* SplashScreen.swift in Sources */,
 				F76E1338278311BC006D6CE2 /* NewCardModalView.swift in Sources */,
 				F7467A2D2781A61800BD18FC /* StudyCardsApp.swift in Sources */,
+				F76E133A278330BE006D6CE2 /* CreateQuestionButtonView.swift in Sources */,
 				F701E0F42782117D00323774 /* HomePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
