@@ -17,14 +17,19 @@ struct CreateCardsView: View {
     var body: some View {
         NavigationView {
             ZStack{
-                Color(0xF4F4F4)
+                Color("background")
                     .ignoresSafeArea(.all)
                 VStack(alignment:.leading,spacing:20){
                     VStack(spacing:25){
                         Group{
-                            TextField("Topic name", text:$cardDetails.topicName)
+                            TextFieldVariant(text: $cardDetails.topicName, placeholderText: "Topic Name",
+                                             textColor:Color(.black),
+                                             placeholderColor:Color(.gray),
+                                             padding: 0
+                                              )
                             Divider()
                             ColorPicker("Topic card color", selection: $topicLabelColor)
+                                .foregroundColor(Color(.gray))
                         }
                         
                         Divider()
@@ -39,6 +44,7 @@ struct CreateCardsView: View {
                         Group{
                             VStack(alignment:.leading){
                                 Text("Frequency")
+                                    .foregroundColor(Color(.black))
                                 HStack{
                                     Text("0")
                                     Slider(value:$frequencyValue,in:(0...1))
@@ -48,6 +54,7 @@ struct CreateCardsView: View {
                             }
                             VStack(){
                                 Text("How frequently do you want to see the incorrectly answered cards")
+                                    .foregroundColor(Color(.black))
                                     .multilineTextAlignment(.center)
                                     .frame(maxWidth:.infinity,  alignment: .center)
                                     .opacity(0.7)

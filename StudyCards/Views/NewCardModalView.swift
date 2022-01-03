@@ -9,17 +9,20 @@ import SwiftUI
 struct TextFieldVariant:View{
     @Binding var text:String;
     var placeholderText: String;
+    var textColor: Color = .white
+    var placeholderColor: Color = .white
+    var padding:CGFloat=20
     var body: some View{
         ZStack{
             if text.isEmpty {
                 Text(placeholderText)
-                    .foregroundColor(.white)
+                    .foregroundColor(placeholderColor)
                     .frame(maxWidth:.infinity, alignment: .leading)
-                    .padding()
+                    .padding(padding)
             }
             TextField("", text: $text)
-                .foregroundColor(.white)
-                .padding()
+                .padding(padding)
+                .foregroundColor(textColor)
                 .frame(maxWidth: .infinity)
                 .overlay(
                     RoundedRectangle(cornerRadius: 25)
