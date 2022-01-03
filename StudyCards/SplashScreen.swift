@@ -16,19 +16,21 @@ struct SplashScreen: View {
                 NavigationLink(destination:HomePageView(), isActive: $isHomePageActive){
                         EmptyView()
                 }
-                Color(0xF4F4F4)
+                Color("background")
                     .edgesIgnoringSafeArea(.all)
                 VStack(spacing:50){
                     Text("Study Cards")
                         .font(.system(size: 45))
+                        .foregroundColor(Color("text"))
                         .fontWeight(.bold)
+                        
                     ZStack{
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width:101,height:147)
-                            .foregroundColor(Color(0x3A3535))
+                            .foregroundColor(Color("secondary"))
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width:101,height:147)
-                            .foregroundColor(Color(0xFF7315))
+                            .foregroundColor(Color("primary"))
                             .offset(CGSize(width: -10, height: 10))
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width:101,height:147)
@@ -37,6 +39,7 @@ struct SplashScreen: View {
                     }.offset(CGSize(width: 0, height: -20))
                     
                     Text("Create, Share and Study cards")
+                        .foregroundColor(Color("text"))
                         .font(.system(size: 12))
                         .tracking(3)
                         .bold()

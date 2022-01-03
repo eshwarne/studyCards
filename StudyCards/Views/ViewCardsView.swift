@@ -14,23 +14,28 @@ struct ViewCardsView: View {
         swiftCards
     ]
     private var gridColumnConfig = [
-        GridItem(.flexible(minimum: 100)),
-        GridItem(.flexible(minimum: 100))
+        GridItem(.flexible(minimum: 150)),
+        GridItem(.flexible(minimum: 150))
     ]
     var body: some View {
         NavigationView{
             ZStack{
                 Color(.white)
-                ScrollView{
-                    LazyVGrid(columns: gridColumnConfig){
-                        ForEach(cardGroups){
-                            card in
-                            Text(card.topicName)
+                VStack(alignment:.leading){
+                    Text("Your card groups")
+                        .font(.largeTitle)
+                        .padding()
+                    ScrollView{
+                        LazyVGrid(columns: gridColumnConfig, spacing: 50){
+                            ForEach(cardGroups){
+                                card in
+                                CardTopicDisplayView(card:card)
+                            }
                         }
                     }
+                    Spacer()
                 }
             }
-            .navigationBarTitle("Your cards")
         }
     }
 }

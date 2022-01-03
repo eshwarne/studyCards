@@ -11,20 +11,27 @@ struct HomePageView: View {
     @State private var nextScreen: String?
     var body: some View {
         ZStack{
-            NavigationLink("create_cards", destination:CreateCardsView(), tag: "CREATE_CARDS", selection: $nextScreen)
-            Color(0xF4F4F4)
+            NavigationLink(destination:CreateCardsView(), tag: "CREATE_CARDS", selection: $nextScreen){
+                EmptyView()
+            }
+            NavigationLink(destination: ViewCardsView(),  tag: "VIEW_CARDS", selection: $nextScreen){
+                EmptyView()
+            }
+            
+            Color("background")
                 .edgesIgnoringSafeArea(.all)
             VStack(alignment:.center, spacing: 40){
                 Text("What are you upto today?")
                 HStack{
-                    Button(action:{}){
+                    Button(action:{
+                        self.nextScreen = "VIEW_CARDS"
+                    }){
                         Text("VIEW CARDS")
                             .fontWeight(.bold)
                             .padding()
-                        
-                            .foregroundColor(Color(0xF4F4F4))
+                            .foregroundColor(Color("textSecondary"))
                             .frame(width: 100, height: 100, alignment: .center)
-                            .background(Color(0xFF7315))
+                            .background(Color("primary"))
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                         
                     }
@@ -35,9 +42,9 @@ struct HomePageView: View {
                         Text("CREATE CARDS")
                             .fontWeight(.bold)
                             .padding()
-                            .foregroundColor(Color(0xF4F4F4))
+                            .foregroundColor(Color("textSecondary"))
                             .frame(width: 100, height: 100, alignment: .center)
-                            .background(Color(0x3A3535))
+                            .background(Color("secondary"))
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                         
                         

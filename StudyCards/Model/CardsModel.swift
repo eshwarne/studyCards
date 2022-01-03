@@ -15,7 +15,14 @@ struct CardsModel: Identifiable {
     var id = UUID()
     var topicName: String;
     var frequency: Double? = 0.5;
-    var image:Image?;
+    var color: Color = Color(0xFF7315)
+    var cardLinearGradient:LinearGradient {
+        LinearGradient(
+            gradient:
+                Gradient(stops: [.init(color: self.color.lighter(by: 40), location: 0), .init(color: self.color, location: 0.5)]),
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing)
+    }
     var questionsWithAnswers: [QuestionWithAnswer];
 }
 
