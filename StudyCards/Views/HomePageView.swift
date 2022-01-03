@@ -49,6 +49,7 @@ struct HomePageView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
 }

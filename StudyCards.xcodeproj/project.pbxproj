@@ -15,6 +15,8 @@
 		F756FA222782BF2D0032FB7A /* CreateCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756FA212782BF2D0032FB7A /* CreateCardsView.swift */; };
 		F76E1338278311BC006D6CE2 /* NewCardModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E1337278311BC006D6CE2 /* NewCardModalView.swift */; };
 		F76E133A278330BE006D6CE2 /* CreateQuestionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E1339278330BE006D6CE2 /* CreateQuestionButtonView.swift */; };
+		F7C93443278348A3001BD4F5 /* CardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C93442278348A3001BD4F5 /* CardsModel.swift */; };
+		F7C9344527834C03001BD4F5 /* ViewCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9344427834C03001BD4F5 /* ViewCardsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		F756FA212782BF2D0032FB7A /* CreateCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardsView.swift; sourceTree = "<group>"; };
 		F76E1337278311BC006D6CE2 /* NewCardModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardModalView.swift; sourceTree = "<group>"; };
 		F76E1339278330BE006D6CE2 /* CreateQuestionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionButtonView.swift; sourceTree = "<group>"; };
+		F7C93442278348A3001BD4F5 /* CardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsModel.swift; sourceTree = "<group>"; };
+		F7C9344427834C03001BD4F5 /* ViewCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 				F756FA212782BF2D0032FB7A /* CreateCardsView.swift */,
 				F76E1337278311BC006D6CE2 /* NewCardModalView.swift */,
 				F76E1339278330BE006D6CE2 /* CreateQuestionButtonView.swift */,
+				F7C9344427834C03001BD4F5 /* ViewCardsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -70,6 +75,7 @@
 		F7467A2B2781A61800BD18FC /* StudyCards */ = {
 			isa = PBXGroup;
 			children = (
+				F7C934412783488A001BD4F5 /* Model */,
 				F701E0F22782116900323774 /* Views */,
 				F7467A2C2781A61800BD18FC /* StudyCardsApp.swift */,
 				F7467A2E2781A61800BD18FC /* SplashScreen.swift */,
@@ -85,6 +91,14 @@
 				F7467A332781A61900BD18FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7C934412783488A001BD4F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7C93442278348A3001BD4F5 /* CardsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F756FA222782BF2D0032FB7A /* CreateCardsView.swift in Sources */,
+				F7C9344527834C03001BD4F5 /* ViewCardsView.swift in Sources */,
 				F7467A2F2781A61800BD18FC /* SplashScreen.swift in Sources */,
 				F76E1338278311BC006D6CE2 /* NewCardModalView.swift in Sources */,
+				F7C93443278348A3001BD4F5 /* CardsModel.swift in Sources */,
 				F7467A2D2781A61800BD18FC /* StudyCardsApp.swift in Sources */,
 				F76E133A278330BE006D6CE2 /* CreateQuestionButtonView.swift in Sources */,
 				F701E0F42782117D00323774 /* HomePageView.swift in Sources */,
