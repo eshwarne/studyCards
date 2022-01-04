@@ -21,8 +21,8 @@ struct HomePageView: View {
             Color("background")
                 .edgesIgnoringSafeArea(.all)
             VStack(alignment:.center, spacing: 40){
-                Text("What are you upto today?")
-                HStack{
+                Text("What are you upto today?").font(.title)
+                HStack(spacing:40){
                     Button(action:{
                         self.nextScreen = "VIEW_CARDS"
                     }){
@@ -33,6 +33,7 @@ struct HomePageView: View {
                             .frame(width: 100, height: 100, alignment: .center)
                             .background(Color("primary"))
                             .clipShape(RoundedRectangle(cornerRadius: 10))
+                            .shadow(radius: 10)
                         
                     }
                     
@@ -46,6 +47,7 @@ struct HomePageView: View {
                             .frame(width: 100, height: 100, alignment: .center)
                             .background(Color("secondary"))
                             .clipShape(RoundedRectangle(cornerRadius: 10))
+                            .shadow(radius: 10)
                         
                         
                     }

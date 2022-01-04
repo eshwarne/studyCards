@@ -24,7 +24,6 @@ struct SplashScreen: View {
                         .font(.system(size: 45))
                         .foregroundColor(Color("text"))
                         .fontWeight(.bold)
-                        
                     ZStack{
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width:101,height:147)
@@ -34,6 +33,7 @@ struct SplashScreen: View {
                             .frame(width:101,height:147)
                             .foregroundColor(Color("primary"))
                             .offset(CGSize(width: -10, height: 10))
+                            .rotation3DEffect(.degrees(self.rotationValue*2), axis: (x:1,y:0,z:0))
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width:101,height:147)
                             .foregroundColor(Color(0x232020))
