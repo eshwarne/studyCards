@@ -40,7 +40,7 @@ struct CreateCardsView: View {
                             }
                         }
                         .sheet(isPresented:$showingQuestionModal){
-                            NewCardModalView()
+                            NewQuestionModalView()
                         }
                         Group{
                             VStack(alignment:.leading){

@@ -1,5 +1,5 @@
 //
-//  NewCardModalView.swift
+//  NewQuestionModalView.swift
 //  StudyCards
 //
 //  Created by Eshwar S on 03/01/22.
@@ -33,7 +33,7 @@ struct TextFieldVariant:View{
         
     }
 }
-struct NewCardModalView: View {
+struct NewQuestionModalView: View {
     @Environment(\.dismiss) var dismiss;
     @State var questionContent: String = "";
     @State var answerContent: String = "";
@@ -73,8 +73,8 @@ struct NewCardModalView: View {
     }
 }
 
-struct NewCardModalView_Previews: PreviewProvider {
+struct NewQuestionModalView_Previews: PreviewProvider {
     static var previews: some View {
-        NewCardModalView()
+        NewQuestionModalView()
     }
 }
