@@ -15,11 +15,12 @@ struct CreateCardsView: View {
     @State private var frequencyValue: Double = 0.5
     @State private var showingQuestionModal = false
     var body: some View {
-        NavigationView {
             ZStack{
                 Color("background")
                     .ignoresSafeArea(.all)
+                
                 VStack(alignment:.leading,spacing:20){
+                    Spacer()
                     VStack(spacing:25){
                         Group{
                             TextFieldVariant(text: $cardDetails.topicName, placeholderText: "Topic Name",
@@ -74,20 +75,17 @@ struct CreateCardsView: View {
                     .shadow(radius: 6)
                     Spacer()
                 }
+                .ignoresSafeArea(.all)
                 .padding(.top, 40)
                 .padding()
+                VStack{
+                    Text("Create cards").font(.largeTitle)
+                    Spacer()
+                }
+            
+                
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(false)
-                    .toolbar {
-                        ToolbarItem(placement: .principal) {
-                            HStack {
-                                Text("Create Cards").font(.headline)
-                            }
-                        }
-                    }
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
+        
     }
 }
 

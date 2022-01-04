@@ -17,9 +17,12 @@ struct CreateQuestionButtonView: View {
         }
         
         .padding()
-        .tint(Color(0xFF7315))
-        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(0x3A3535)))
-        .clipped()
+        .foregroundColor(.white)
+        .background(Color("primary"))
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.white)))
+        .shadow(radius: 8)
+  
     }
 }
 

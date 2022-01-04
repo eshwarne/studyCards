@@ -43,7 +43,7 @@ struct NewCardModalView: View {
                 .font(.system(size: 25))
                 .fontWeight(.bold)
             ZStack{
-                Color(0xFF7315)
+                Color("primary")
                 VStack(spacing:30){
                     
                     TextFieldVariant(text: $questionContent, placeholderText: "Question")
@@ -61,11 +61,12 @@ struct NewCardModalView: View {
                         
                         
                     }.tint(.white)
-                }.padding()
+                }
+                .padding()
             }.frame(width: 300, height: 400, alignment: .center)
-            
                 .cornerRadius(25)
                 .padding()
+                .shadow(radius: 10)
         }
         
         

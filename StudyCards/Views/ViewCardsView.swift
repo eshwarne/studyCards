@@ -25,18 +25,23 @@ struct ViewCardsView: View {
                     Text("Your card groups")
                         .font(.largeTitle)
                         .padding()
+                        .padding(.top, 30)
                     ScrollView{
-                        LazyVGrid(columns: gridColumnConfig, spacing: 50){
+                        LazyVGrid(columns: gridColumnConfig, spacing: 40){
                             ForEach(cardGroups){
                                 card in
                                 CardTopicDisplayView(card:card)
+                                    .padding()
                             }
                         }
                     }
                     Spacer()
                 }
             }
-        }
+            .navigationBarHidden(true)
+        
+        }.padding(0)
+        
     }
 }
 

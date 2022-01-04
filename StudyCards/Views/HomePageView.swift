@@ -11,10 +11,11 @@ struct HomePageView: View {
     @State private var nextScreen: String?
     var body: some View {
         ZStack{
-            NavigationLink(destination:CreateCardsView(), tag: "CREATE_CARDS", selection: $nextScreen){
+            NavigationLink(destination:CreateCardsView()  .navigationBarBackButtonHidden(true), tag: "CREATE_CARDS", selection: $nextScreen){
                 EmptyView()
+                
             }
-            NavigationLink(destination: ViewCardsView(),  tag: "VIEW_CARDS", selection: $nextScreen){
+            NavigationLink(destination: ViewCardsView()  .navigationBarBackButtonHidden(true),  tag: "VIEW_CARDS", selection: $nextScreen){
                 EmptyView()
             }
             
