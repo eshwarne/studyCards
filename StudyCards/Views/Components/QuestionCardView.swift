@@ -15,10 +15,12 @@ struct QuestionCardView: View {
         VStack{
             Spacer()
             Text(questionContent)
+                .fontWeight(.bold)
                 .multilineTextAlignment(.center)
                 .font(.title)
             Spacer()
             Text(answerContent)
+                .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
                 .font(.headline)
             Spacer()

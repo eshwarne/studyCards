@@ -22,11 +22,12 @@ struct ViewCardsView: View {
     var body: some View {
         NavigationView{
             ZStack{
+                 Color("background")
                 NavigationLink(destination:CardsStackView(cardGroup: cardGroups[currentCardGGoupIndex]),
                 isActive: $cardStackViewIsActive){
                     EmptyView()
                 }
-                Color("background")
+               
                 VStack(alignment:.leading){
                     Text("Your card groups")
                         .font(.largeTitle)
@@ -47,7 +48,10 @@ struct ViewCardsView: View {
                     }
                     Spacer()
                 }
+                .padding()
             }
+            .ignoresSafeArea()
+           
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
         }
