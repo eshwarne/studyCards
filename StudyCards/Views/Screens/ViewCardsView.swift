@@ -17,10 +17,16 @@ struct ViewCardsView: View {
         GridItem(.flexible(minimum: 150)),
         GridItem(.flexible(minimum: 150))
     ]
+    @State private var cardStackViewIsActive = false
+    @State private var currentCardGGoupIndex: Int = 0
     var body: some View {
         NavigationView{
             ZStack{
-                Color(.white)
+                NavigationLink(destination:CardsStackView(cardGroup: cardGroups[currentCardGGoupIndex]),
+                isActive: $cardStackViewIsActive){
+                    EmptyView()
+                }
+                Color("background")
                 VStack(alignment:.leading){
                     Text("Your card groups")
                         .font(.largeTitle)
@@ -28,10 +34,14 @@ struct ViewCardsView: View {
                         .padding(.top, 30)
                     ScrollView{
                         LazyVGrid(columns: gridColumnConfig, spacing: 40){
-                            ForEach(cardGroups){
-                                card in
-                                CardTopicDisplayView(card:card)
+                            ForEach((0..<cardGroups.count)){
+                                cardIndex in
+                                CardTopicDisplayView(card:cardGroups[cardIndex])
                                     .padding()
+                                    .onTapGesture {
+                                        self.currentCardGGoupIndex = cardIndex
+                                        self.cardStackViewIsActive = true
+                                    }
                             }
                         }
                     }
@@ -39,8 +49,9 @@ struct ViewCardsView: View {
                 }
             }
             .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+        }
         
-        }.padding(0)
         
     }
 }

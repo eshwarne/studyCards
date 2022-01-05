@@ -7,7 +7,8 @@
 
 import Foundation
 import SwiftUI
-struct QuestionWithAnswer{
+struct QuestionWithAnswer: Identifiable{
+    var id = UUID()
     var question: String;
     var answer: String;
 }

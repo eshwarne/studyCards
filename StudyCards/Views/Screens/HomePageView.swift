@@ -15,7 +15,9 @@ struct HomePageView: View {
                 EmptyView()
                 
             }
-            NavigationLink(destination: ViewCardsView()  .navigationBarBackButtonHidden(true),  tag: "VIEW_CARDS", selection: $nextScreen){
+            NavigationLink(destination: ViewCardsView()
+                            .navigationBarHidden(true),
+                          tag: "VIEW_CARDS", selection: $nextScreen){
                 EmptyView()
             }
             

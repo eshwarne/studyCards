@@ -18,6 +18,8 @@
 		F7C93443278348A3001BD4F5 /* CardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C93442278348A3001BD4F5 /* CardsModel.swift */; };
 		F7C9344527834C03001BD4F5 /* ViewCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9344427834C03001BD4F5 /* ViewCardsView.swift */; };
 		F7C934472783546F001BD4F5 /* CardTopicDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C934462783546F001BD4F5 /* CardTopicDisplayView.swift */; };
+		F7E965052785AE1200E77BC5 /* CardsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E965042785AE1200E77BC5 /* CardsStackView.swift */; };
+		F7E965072785AE5200E77BC5 /* QuestionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E965062785AE5200E77BC5 /* QuestionCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		F7C93442278348A3001BD4F5 /* CardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsModel.swift; sourceTree = "<group>"; };
 		F7C9344427834C03001BD4F5 /* ViewCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCardsView.swift; sourceTree = "<group>"; };
 		F7C934462783546F001BD4F5 /* CardTopicDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTopicDisplayView.swift; sourceTree = "<group>"; };
+		F7E965042785AE1200E77BC5 /* CardsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStackView.swift; sourceTree = "<group>"; };
+		F7E965062785AE5200E77BC5 /* QuestionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 				F7C934462783546F001BD4F5 /* CardTopicDisplayView.swift */,
 				F7C9344427834C03001BD4F5 /* ViewCardsView.swift */,
 				F701E0F32782117D00323774 /* HomePageView.swift */,
+				F7E965042785AE1200E77BC5 /* CardsStackView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			children = (
 				F76E1339278330BE006D6CE2 /* CreateQuestionButtonView.swift */,
 				F76E1337278311BC006D6CE2 /* NewQuestionModalView.swift */,
+				F7E965062785AE5200E77BC5 /* QuestionCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -195,10 +201,12 @@
 				F7467A2F2781A61800BD18FC /* SplashScreen.swift in Sources */,
 				F76E1338278311BC006D6CE2 /* NewQuestionModalView.swift in Sources */,
 				F7C934472783546F001BD4F5 /* CardTopicDisplayView.swift in Sources */,
+				F7E965052785AE1200E77BC5 /* CardsStackView.swift in Sources */,
 				F7C93443278348A3001BD4F5 /* CardsModel.swift in Sources */,
 				F7467A2D2781A61800BD18FC /* StudyCardsApp.swift in Sources */,
 				F76E133A278330BE006D6CE2 /* CreateQuestionButtonView.swift in Sources */,
 				F701E0F42782117D00323774 /* HomePageView.swift in Sources */,
+				F7E965072785AE5200E77BC5 /* QuestionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
